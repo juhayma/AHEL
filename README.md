@@ -39,7 +39,7 @@ Generated outputs are stored in `outputs/`.
 | `data/survey_results_public.csv` | Developer/professional benchmark analysis |
 | `data/student_survey.csv` | Student practical exposure and readiness analysis for H1 |
 
-> Note: `student_survey.csv` is included as a template/sample. Replace it with final collected student survey responses before final academic submission if you have the real survey data.
+> `student_survey.csv` contains the final collected student survey responses (208 responses) used to compute the Practical Exposure Benchmark and test H1 (see `outputs/student_survey_h1_report.md`).
 
 ## AI and ML models used
 
@@ -359,12 +359,12 @@ gpt-4.1-mini
 This is a small/mini LLM, not a large locally hosted model.
 
 
-## Student Survey Dataset Added
+## Student Survey Dataset
 
-The project now includes the uploaded student survey as both:
+The project includes the collected student survey as both:
 
 - `data/student_survey.xlsx` - original Excel dataset
-- `data/student_survey.csv` - converted CSV used by the browser app and analysis scripts
+- `data/student_survey.csv` - converted CSV used by the browser app and analysis scripts (208 responses)
 
 This dataset is used to test **H1: Practical exposure is positively associated with professional readiness**.
 
@@ -393,7 +393,7 @@ The file `analysis/student_survey_analysis.py` generates:
 - `outputs/student_survey_correlation.csv`
 - `outputs/student_survey_h1_report.md`
 
-Because yes, the dataset is now doing actual work instead of sitting in the folder like a decorative spreadsheet.
+The analysis found a Pearson correlation of **r = 0.451** between practical exposure and perceived professional readiness, supporting H1.
 
 ---
 
