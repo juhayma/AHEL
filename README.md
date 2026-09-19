@@ -4,20 +4,20 @@
 
 🏆 **Achievement:** Awarded Best Senior Project by the College of Computer Science & Engineering, ranking among the **Top 3 projects university-wide**.
 
-## 📌 Overview
+##  Overview
 
 Computer Science students increasingly graduate with strong theoretical knowledge but limited practical exposure, leaving them uncertain about how ready they actually are for the job market. Traditional academic assessment measures grades, not applied, market-relevant competencies.
 
 AHEL addresses this gap by combining student self-assessment data, live job-market analysis, and developer-survey benchmarking into a single **Readiness Index**. Using natural language processing, statistical machine learning, and an optional LLM-assisted recommendation layer, AHEL identifies each student's skill gaps relative to industry demand and their chosen specialization, then returns personalized, actionable recommendations.
 
-## 🎯 Objectives
+##  Objectives
 
 - Identify the gap between academic preparation and current labor-market skill demand.
 - Develop a structured, quantifiable framework for measuring student readiness across practical exposure, skill alignment, experience depth, and confidence.
 - Improve the accuracy of readiness assessment by benchmarking students against real job postings and a large developer survey dataset.
 - Provide meaningful, specialization-specific insights and personalized development recommendations.
 
-## ✨ Features
+##  Features
 
 - Four-step guided assessment flow: specialization selection, technical skills, practical exposure, and confidence rating.
 - NLP-based skill extraction and frequency/TF-IDF analysis from real job postings.
@@ -27,7 +27,7 @@ AHEL addresses this gap by combining student self-assessment data, live job-mark
 - Dataset-backed evidence section showing how each score was derived.
 - Optional AI-generated summary and recommendations via an LLM backend, with an offline rule-based fallback when no API key is configured.
 
-## 🛠️ Technologies
+##  Technologies
 
 - Python
 - Pandas
@@ -39,7 +39,7 @@ AHEL addresses this gap by combining student self-assessment data, live job-mark
 - Joblib, python-dotenv
 - HTML / CSS / JavaScript (frontend)
 
-## 📊 Dataset
+##  Dataset
 
 Three datasets are used together to build the Readiness Index:
 
@@ -53,7 +53,7 @@ Three datasets are used together to build the Readiness Index:
 
 Data was cleaned, encoded, normalized, and text-processed before analysis and model training.
 
-## ⚙️ Methodology
+##  Methodology
 
 1. Data Collection (student survey, job postings, developer survey)
 2. Data Cleaning
@@ -64,7 +64,7 @@ Data was cleaned, encoded, normalized, and text-processed before analysis and mo
 7. Model Training (Logistic Regression)
 8. Composite Readiness Index Calculation & Results Analysis
 
-## 🤖 Machine Learning Model
+##  Machine Learning Model
 
 The project uses **Logistic Regression** to test whether skill diversity and experience are associated with full-time employment status (Hypothesis H2). Logistic Regression was chosen for its interpretability — its coefficients directly show the direction and strength of each feature's relationship with employment outcome, which matters for an academic readiness framework meant to explain *why* a gap exists, not just predict it.
 
@@ -72,7 +72,7 @@ Features used: Skill Diversity Index, Skill Count, Years Coding, Years Coding Pr
 
 In addition, a lightweight **TF-IDF / NLP pipeline** extracts and weights in-demand technical skills from job postings, and an **optional LLM layer** (via the OpenAI API) generates natural-language recommendations from the computed skill gaps.
 
-## 📈 Results
+##  Results
 
 | Metric | Score |
 |---|---:|
@@ -84,7 +84,7 @@ In addition, a lightweight **TF-IDF / NLP pipeline** extracts and weights in-dem
 
 > Note: the dataset is heavily skewed toward full-time employment. H2 was **partially supported** — professional experience (years coding professionally) showed a clear positive association with full-time employment, while the Skill Diversity Index did not show the expected positive direction in this sample. Results should be interpreted with this class imbalance in mind.
 
-## 🚀 Installation
+##  Installation
 
 Clone the repository:
 
@@ -100,7 +100,7 @@ cd backend
 pip install -r requirements.txt
 ```
 
-## ▶️ Usage
+## Usage
 
 AHEL runs as two components that must be started in **two separate terminals**.
 
@@ -130,7 +130,7 @@ Open the app:
 http://localhost:8000
 ```
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 AHEL/
@@ -147,7 +147,7 @@ AHEL/
 └── README.md
 ```
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 - Replace the sample student survey with full, final collected responses for higher statistical power.
 - Expand specialization coverage and refine skill-weighting per track.
