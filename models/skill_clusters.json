@@ -1,0 +1,70 @@
+{
+  "Data Science": [
+    "python",
+    "r",
+    "sql",
+    "machine learning",
+    "statistics",
+    "pandas",
+    "numpy",
+    "scikit-learn",
+    "tableau",
+    "power bi",
+    "nlp"
+  ],
+  "Software Engineering": [
+    "javascript",
+    "typescript",
+    "java",
+    "c#",
+    "react",
+    "node",
+    "git",
+    "docker",
+    "api",
+    "testing"
+  ],
+  "Networks": [
+    "network",
+    "linux",
+    "tcp",
+    "ip",
+    "security",
+    "cloud",
+    "aws",
+    "azure",
+    "firewall",
+    "cisco"
+  ],
+  "Cybersecurity": [
+    "security",
+    "linux",
+    "network",
+    "incident",
+    "risk",
+    "cloud",
+    "python",
+    "siem",
+    "vulnerability"
+  ],
+  "AI/ML": [
+    "python",
+    "machine learning",
+    "deep learning",
+    "nlp",
+    "tensorflow",
+    "pytorch",
+    "scikit-learn",
+    "statistics"
+  ],
+  "Business Analytics": [
+    "excel",
+    "sql",
+    "power bi",
+    "tableau",
+    "dashboard",
+    "reporting",
+    "statistics",
+    "data visualization"
+  ]
+}

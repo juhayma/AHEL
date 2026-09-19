@@ -1,0 +1,24 @@
+{
+  "project": "AHEL Data Science Readiness Analyzer",
+  "model_files": {
+    "logistic_regression_model": "models/logistic_regression_model.pkl",
+    "tfidf_vectorizer": "models/tfidf_vectorizer.pkl",
+    "label_encoder": "models/label_encoder.pkl",
+    "specialization_weights": "models/specialization_weights.json",
+    "skill_clusters": "models/skill_clusters.json"
+  },
+  "tfidf": {
+    "rows": 1048,
+    "features": 1000
+  },
+  "logistic_regression": {
+    "rows": 2157,
+    "accuracy": 0.4703703703703704,
+    "roc_auc": 0.7614612663345606,
+    "classes": [
+      "full_time",
+      "other"
+    ]
+  },
+  "llm_status": "Optional OpenAI API backend in backend/server.py. Requires OPENAI_API_KEY."
+}
